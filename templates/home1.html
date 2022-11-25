@@ -1,0 +1,23 @@
+<html>
+    <body bgcolor=#78F878>
+
+        <center>
+
+        <h1> Downy_Disease_Prediction </h1><br><br>
+        
+        <form method="POST", action="{{url_for('home')}}">
+            Airtemp_min .:  <input type="number ", name='a', placeholder="Airtemp_min", min="0", step="any"> <br><br>
+            Airtemp_max .:  <input type="number ", name='b', placeholder="Airtemp_max",min="0", step="any"> <br><br>
+            RelHum_min .:  <input type="number ", name='c', placeholder="RelHum_min",min="0", step="any"><br><br>
+        RelHum_Max : <input type="number ", name='d', placeholder="RelHum_Max",min="0", step="any"><br><br>
+    Rain ..............: <input type="number ", name='e', placeholder="Rain", min="0",step="any" ><br><br>
+    PGS .............. : <input type="number ", name='f', placeholder="PGS", min="0.00", step="any"> <br><br>
+            <input type="submit" , value='predict!' >
+        </form>
+
+        <img src='static\graps1.JPG' alt="flower">
+        
+    </center>
+
+    </body>
+</html>
